@@ -184,6 +184,7 @@ b {
 		padding: 0;
 	}
 
+	/* For images
 	.custom-navbar .navbar-brand {
 		height: auto;
 		width: auto;
@@ -191,6 +192,13 @@ b {
 		max-width: 400px;
 		line-height: 35px;
 		vertical-align: middle;
+	}*/
+
+	.custom-navbar .navbar-brand {
+	    color: #ffffff;
+	    font-weight: 600;
+	    font-size: 3rem;
+	    line-height: 40px;
 	}
 
 	.custom-navbar .nav li a {
