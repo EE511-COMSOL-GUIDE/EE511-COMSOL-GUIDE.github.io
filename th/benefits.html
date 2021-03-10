@@ -1,0 +1,640 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>TruHu</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://kit.fontawesome.com/9fa4c9c319.js" crossorigin="anonymous"></script>
+
+	<!-- Google Tag Manager -->
+	<script>
+	(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-M4LRWN7');</script>
+	<!-- End Google Tag Manager -->
+	<style>
+		.eyebrow {
+			margin-bottom: 0px;
+			padding-bottom: 0px;
+			color: #00aaff;
+		}
+
+        /*---------------------------------------
+    Benefits Zpat Section              
+-----------------------------------------*/
+        #benFtrs {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+            #benFtrs h1 {
+                font-size: 28px;
+                color: #2a5489;
+                font-weight: 600;
+                text-align: center;
+            }
+
+            #benFtrs h2 {
+                color: #2a5489;
+            }
+
+            #benFtrs h3 {
+                font-size: 26px;
+                color: #2a5489;
+                font-weight: 600;
+				margin-top: 5px;
+            }
+
+            #benFtrs h4 {
+                color: #2a5489;
+                font-weight: 600;
+            }
+
+        .fa-li {
+            color: #00aaff;
+        }
+
+        #benFtrs li {
+            font-size: 18px;
+        }
+
+        @media(max-width: 768px) {
+            #benFtrs img {
+                margin-bottom: 2rem;
+            }
+        }
+
+        /*---------------------------------------
+			Benefits scroll-img Section              
+		-----------------------------------------*/
+        .scroll-img {
+            padding-top: 20rem;
+            padding-bottom: 20rem;
+			border: 0px;
+        }
+
+        #scroll-img h3 {
+            font-size: 26px;
+            color: #2a5489;
+            font-weight: 600;
+			
+        }
+
+        #scroll-img h4 {
+            color: #101010;
+        }
+
+        .fixed-bg {
+            position: relative;
+            overflow: hidden;
+            border: 0px;
+        }
+
+        .scroll-txt {
+            position: relative;
+			z-index: 2;
+            padding-top: 20rem;
+            padding-bottom: 20rem;
+			border: 0px;
+        }
+        
+		.fixed-bg img{
+            position: absolute;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+			opacity: 0;
+            background-image: url('images/survey-scroll.png');
+            height: 100%;
+            width: 100%;
+			border: 0px;
+			
+        } 
+
+        .c-col {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (min-width: 992px) {
+            .c-col {
+                width: 1100px;
+            }
+        }
+
+        .c-row {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-gap: 20px;
+        }
+
+        @media (min-width: 992px) {
+            .c-col-md-6 {
+                grid-column: span 6;
+            }
+        }
+
+        /*---------------------------------------
+			Benefits Perks Section              
+		-----------------------------------------*/
+
+        #benPerks {
+            text-align: center;
+			padding-top: 5rem;
+            padding-bottom: 5rem;
+            background: #254a79;
+            color: #ffffff;
+        }
+
+		#benPerks .section-title p {
+			font-size: 18px;
+		}
+
+		#benPerks .row-break {
+			color: #66ccff;
+		}
+
+        #benPerks .row-break h4 {
+            color: #ffffff;
+			font-weight: 600;
+        }
+
+        #benPerks p {
+            color: #ffffff;
+        }
+
+            #benPerks h3 {
+                color: #66ccff;
+                margin-top: 5px;
+            }
+
+        /*---------------------------------------
+			Horizontal Scroll Examples Section              
+		-----------------------------------------*/
+
+        #examples {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            text-align: center;
+            background: #d4f1ff;
+            overscroll-behavior-x: contain;
+        }
+
+            #examples h3 {
+                margin-top: 5px;
+            }
+
+            #examples h5 {
+                color: #00aaff;
+            }
+
+			#benPerks p {
+				font-size: 18px;
+			}
+
+        :root {
+            --gutter: 50px;
+        }
+
+        .app {
+            padding-top: 2rem;
+            display: grid;
+            grid-gap: var(--gutter) 0;
+            grid-template-columns: var(--gutter) 1fr var(--gutter);
+            align-content: start;
+        }
+
+        .app > * {
+            grid-column: 2 / -2;
+        }
+
+        .app > .full {
+            grid-column: 1 / -1;
+        }
+
+        .hs {
+            display: grid;
+            grid-gap: calc(var(--gutter) / 2);
+            grid-template-columns: 10px;
+            grid-template-rows: minmax(150px, 1fr);
+            grid-auto-flow: column;
+            grid-auto-columns: calc(50% - var(--gutter) * 2);
+            overflow-x: scroll;
+            scroll-snap-type: x proximity;
+            padding-bottom: calc(.75 * var(--gutter));
+            margin-bottom: calc(-.25 * var(--gutter));
+        }
+
+        .hs:before,
+        .hs:after {
+            content: '';
+            width: 10px;
+        }
+
+        .no-scrollbar {
+            scrollbar-width: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .item {
+            scroll-snap-align: center;
+            padding: calc(var(--gutter) / 2 * 1.5);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            border-radius: 8px;
+        }
+
+            .item h3 {
+                color: #254a79;
+				padding-top: 20px;
+            }
+
+        /*---------------------------------------
+			Brokers w/ TruHu Section              
+		-----------------------------------------*/
+
+	</style>
+</head>
+<body>
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M4LRWN7"
+				height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- =========================
+		 Plain preloader
+	============================== -->
+	<div class="preloader">
+	</div>
+
+	<!-- =========================
+		 Navbar
+	============================== -->
+	<div class="navbar navbar-fixed-top custom-navbar top-nav-collapse" role="navigation">
+		<div class="container">
+
+			<div class="navbar-header">
+
+				<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+					<span class="icon icon-bar"></span>
+				</button>
+
+				<a href="../"><image src="images/truhulogo.png" class="navbar-brand" alt="Logo"></image></a>
+			</div>
+			<div class="collapse navbar-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="pulse.html">Products</a></li>
+					<li><a href="#benHero" class="smoothScroll"><span class="current">Partners</span></a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><button onclick="location.href='https://demo.truhu.com/pulse'" class="btn demo-navbtn navbar-btn" id="benNavBtn">GET A DEMO</button></li>
+					<li><button onclick="location.href='../Login.aspx'" class="btn login-btn navbar-btn"><i class="fas fa-sign-in-alt" id="benLoginBtn"></i> LOGIN</button></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<!-- =========================
+		Benefits Hero
+	============================== -->
+	<section id="benHero" class="parallax-section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-6">
+					<h4 class="wow fadeIn" data-wow-delay="1.2s">TruHu Pulse</h4>
+					<h1 class="wow fadeIn" data-wow-delay="1.2s">Proven Communication Solutions To Differentiate Your Agency</h1>
+					<h3 class="wow fadeIn" data-wow-delay="1.2s">Help HR stay connected to their mobile and work from home employees, and watch your business grow.</h3>
+					<a href="https://demo.truhu.com/pulse" class="btn btn-lg btn-main wow fadeInUp" data-wow-delay="1.8s" id="benHro2DmoBtn">GET A DEMO</a>
+				</div>
+
+				<div class="hero-break hide-comp">
+					<hr>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================
+		Benefits Big Z Pattern
+	============================== -->
+	<section id="benFtrs">
+		<div class="container">
+
+
+			<h1>How We Help The Broker’s HR Clients</h1>
+			<hr>
+
+			<div class="row row-break">
+				<div class="hide-comp">
+					<img src="images/three_devices.png" class="img-responsive">
+				</div>
+
+				<div class="wow fadeInLeft col-md-5 vcenter zpat-headings" data-wow-delay="0.2s">
+					<h5 class="eyebrow">How TruHu Helps Your Clients</h5>
+					<h3>Increase Productivity and Create Successful Employees</h3>
+					<p>TruHu Pulse makes it easy for HR professionals to build culture, stay compliant and be productive. Our mobile platform helps HR put the right messages and information in employees’ hands, wherever they are. When organizations communicate effectively, employees are engaged, motivated and successful.</p>
+				</div><!--
+				--><div class="col-md-7 vcenter hide-tablet">
+					<img src="images/three_devices.png" class="img-responsive">
+				</div>
+
+			</div>
+
+			<div class="row row-break">
+				<div class="col-md-7 vcenter">
+					<img src="images/benefits_screens.png" class="img-responsive">
+				</div><!--
+				--><div class="wow fadeInRight col-md-5 vcenter zpat-headings" data-wow-delay="0.2s">
+					<h5 class="eyebrow">TruHu Pulse: Mobile-first HR Communication Solution</h5>
+					<h3>Keep Employees Connected and Informed</h3>
+					<p>Our mobile-first communication platform simplifies and streamlines HR’s tasks of remaining in touch and sharing information with employees, mobile and remote in particular.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================
+		Scrolling Image Cycle - No BS
+	============================== -->
+	<section id="scroll-img" class="fixed-bg">
+		<img>
+		<div class="c-col">
+			<div class="c-row ">
+				<div class="scroll-txt c-col-md-6">
+					<h3>Pulse Surveys: Understand how employees are doing.</h3>
+					<h4>Get business insight into what’s really going on&mdash;like if employees are engaged, motivated, or isolated&mdash;to improve productivity and reduce turnover.</h4>
+				</div>
+
+				<div class="c-col-md-6"></div>
+
+				<div class="scroll-txt c-col-md-6">
+					<h3>HR Portal: Share important HR and benefits information.</h3>
+					<h4>Provide employees with a simple, elegant way to access company information, and raise HR’s profile in the process .</h4>
+				</div>
+
+				<div class="c-col-md-6"></div>
+
+				<div class="scroll-txt c-col-md-6">
+					<h3>Dynamic Messaging: Remain connected to employees</h3>
+					<h4>Always know employees receive important messages and alerts with trackable text and email.</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================
+		Benefits Perks Section
+	============================== -->
+	<section id="benPerks">
+		<div class="container">
+
+			<div class="row section-title">
+				<h5 class="eyebrow">Be a Trusted Advisor</h5>
+				<h3>Grow Your Business</h3>
+				<p>How employees work has changed, and for innovative benefit brokers change means opportunity. Prospects as well as existing clients are now open to discussing new ways to communicate with their team. Establish and differentiate yourself as a trusted business consultant by introducing TruHu Pulse.</p>
+			</div>
+
+			<div class="row row-break">
+
+				<div class="product wow fadeIn col-md-4 col-sm-4" data-wow-delay="0.2s">
+					<span id="iconPrk"><i class="fas fa-layer-group"></i></span>
+					<h4>Win more groups by making HR more productive</h4>
+				</div>
+
+				<div class="product wow fadeIn col-md-4 col-sm-4" data-wow-delay="0.4s">
+					<span id="iconPrk"><i class="fas fa-user-astronaut"></i></span>
+					<h4>Retain more clients by exceeding their expectations</h4>
+				</div>
+
+				<div class="product wow fadeIn col-md-4 col-sm-4" data-wow-delay="0.6s">
+					<span id="iconPrk"><i class="fas fa-tools"></i></span>
+					<h4>Differentiate your agency by solving relevant HR problems</h4>
+				</div>
+
+			</div>
+			<div class="row row-break">
+
+				<div class="col-md-2 col-sm-2"></div>
+
+				<div class="product wow fadeIn col-md-4 col-sm-4" data-wow-delay="0.6s">
+					<span id="iconPrk"><i class="fas fa-hand-holding-heart"></i></span>
+					<h4>Defend against PEO and Payroll mobile “platform” threat</h4>
+				</div>
+
+				<div class="product wow fadeIn col-md-4 col-sm-4" data-wow-delay="0.4s">
+					<span id="iconPrk"><i class="fas fa-arrow-alt-circle-up"></i></span>
+					<h4>Expand your client impact beyond insurance transactions</h4>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<!-- =========================
+		Horizontally scrolling prod images for diff applications
+	============================== -->
+	<section id="examples">
+
+		<h5 class="eyebrow">TruHu In Action</h5>
+		<h3>How Employers Use Pulse</h3>
+		<p>TruHu empowers your clients with the tools to impact company culture and performance, and help employees value and understand their benefits.</p>
+
+		<div class="app">
+			<div class="hs full no-scrollbar">
+				<div class="item">
+					<img src="images/three_devices.png" class="img-responsive">
+					<h3>Build Culture</h3>
+					<h4>Track employee engagement; Communicate brand values, priorities and stories; Celebrate company and employee events and wins</h4>
+				</div>
+				<div class="item">
+					<img src="images/three_devices.png" class="img-responsive">
+					<h3>Stay Compliant</h3>
+					<h4>Issue COVID surveys; Share COVID resources; Deliver compliance training</h4>
+				</div>
+				<div class="item">
+					<img src="images/three_devices.png" class="img-responsive">
+					<h3>Increase Productivity</h3>
+					<h4>Centralize and standardized access to information</h4>
+				</div>
+				<div class="item">
+					<img src="images/three_devices.png" class="img-responsive">
+					<h3>Simplify Benefits Communications</h3>
+					<h4>Launch benefits surveys; Host open enrollment documents (multilingual); share year-round benefits communications</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- =========================
+		Partners Benefits Section
+	============================== -->
+	<section id="benLogos">
+		<div class="container">
+			<h2>Benefit Brokers are Winning with TruHu</h2>
+			<hr>
+
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 vcenter">
+					<img src="images/epic-logo.png" class="img-responsive">
+				</div><!--
+				--><div class="col-md-3 col-sm-6 col-xs-12 vcenter">
+					<img src="images/brio-logo.png" class="img-responsive">
+				</div><!--
+				--><div class="col-md-3 col-sm-6 col-xs-12 vcenter">
+					<img src="images/jns-logo.png" class="img-responsive">
+				</div><!--
+				--><div class="col-md-3 col-sm-6 col-xs-12 vcenter">
+					<img src="images/acrisure-logo.png" class="img-responsive">
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- =========================
+		FOOTER SECTION
+	============================== -->
+	<footer>
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-12 col-sm-12">
+					<h1>     Ready to Engage? <br /><a href="https://demo.truhu.com/pulse" class="btn btn-lg btn-main smoothScroll" id="benFtrBtn">GET A DEMO</a></h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12">
+					<p>
+						Copyright &copy; <span id="CurrentYear"></span> TruHu
+						| <a href="terms.html" class="legal-link">Terms of Use</a>
+						| <a href="privacy-policy.html" class="legal-link">Privacy Policy</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!-- =========================
+		 SCRIPTS
+	============================== -->
+	<script src="js/jquery.js"></script>
+	<script>
+
+
+
+		window.addEventListener("scroll", function () {
+			//var elmnt = document.getElementById("scroll-img");
+			//var scrollDpth1 = elmnt.position();
+			//alert(scrollDpth1);
+			var tags = $("section");
+			var scrollDpth = window.scrollY;
+
+			// Estimated start of section
+			const sectionStart = 1370;
+			var sectionDpth = scrollDpth - sectionStart;
+
+			// Distance between any two text chunks (or the dist between the midpoints btwn them)
+			const txtDist = 600;
+
+			function fadeImg(n) {
+				// Defines pixel step for opacity change
+				var pixStep = 30;
+
+				// Initializes opacity value
+				var opNum;
+
+				var opacities = ['0', '0', '0', '0', '0', '0', '.3', '.7', '1', '1', '1'];
+
+				if (sectionDpth <= n * 10 * pixStep) {
+					opNum = Math.round(sectionDpth / (n * pixStep));
+				}
+				else if (sectionDpth > n * 10 * pixStep) {
+					opNum = Math.round(Math.abs(sectionDpth - (n + 1) * 10 * pixStep) / (n * pixStep));
+				}
+
+				$('.fixed-bg img').css('opacity', opacities[opNum - 1]);
+
+			}
+
+			//alert(scrollDpth);
+			if (sectionDpth <= txtDist) {
+				//centered around 1670
+				$('.fixed-bg img').css('background-image', `url('images/survey-scroll.png')`);
+				fadeImg(1);
+			}
+
+			if (sectionDpth > txtDist) {
+				//centered around 2270
+				$('.fixed-bg img').css('background-image', `url('images/portal-scroll.png')`);
+				fadeImg(3);
+			}
+
+			if (sectionDpth > 2 * txtDist) {
+				//centered around 2870
+				$('.fixed-bg img').css('background-image', `url('images/message-scroll.png')`);
+				fadeImg(5);
+			}
+		});
+
+
+			//// Images asset
+			//const prodImages = {
+			//	1: 'images/intro.jpg',
+			//	2: 'images/pulsHero.jpg',
+			//	3: 'images/benHero.jpg'
+			//}
+
+			//// Global variable to control the scrolling behavior
+			//const step = 100; // For each 100px, change an image
+			//function trackScrollPosition() {
+			//	const y = window.scrollY;
+			//	const label = Math.min(Math.floor(y / 100) + 1, 90);
+			//	const imageToUse = prodImages[label];
+			//	// Change the background image
+			//	$('.fixed-bg').css('background-image', `url('${imageToUse}')`);
+			//}
+
+			//$(document).ready(() => {
+			//	$(window).scroll(() => {
+			//		trackScrollPosition();
+			//	})
+			//})
+	</script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.parallax.js"></script>
+	<script src="js/smoothscroll.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>
