@@ -296,7 +296,8 @@ b {
 -----------------------------------------*/
 footer {
 	color: #ffffff;
-	background: #254a79;
+	background: #1C503A;
+	font-weight: 600;
 	background-attachment: fixed;
 	padding-top: 2rem;
 	padding-bottom: 2rem;
