@@ -21,7 +21,7 @@ section {
 	padding-bottom: 2rem;
 }
 
-h1 {
+h1, h3 {
 	color: #1C503A;
 	text-align: center;
 }
@@ -36,12 +36,20 @@ iframe {
 	display: block;
 }	
 .vid {
-	padding-top: 1rem;
-	padding-bottom: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+	
+.alts {
+	text-align: center;
 }
 	
 #intro {
 	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/images/about-calpoly-aerial.jpg') 50% 0 repeat-y fixed;
+}
+	
+#conclusion {
+	padding-bottom: 4rem;
 }
 </style>
 
@@ -117,15 +125,15 @@ iframe {
 			<p>I identified a few potential alternatives for the project, before going for COMSOL. All of these use the Finite Element Method to perform the magnetics modeling, and are available in some capacity through Cal Poly.</p>
 		</div>
 		<div class="row">	
-			<div class="col-md-4">
+			<div class="col-md-4 alts">
 				<h3>Ansys</h3>
 				<p>Ansys had similar capabilities to COMSOL, but I ultimately determined that I preferred the more academic format and feel of COMSOL. In addition, COMSOL’s small team and good customer service were a strong point in its favor.</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 alts">
 				<h3>Agros2D</h3>
 				<p>Agros2D was considered, but ultimately considered too close to FEMM in terms of its limitations and capabilities. Though the visual editor was a step up from FEMM, the abilities of the other programs listed here were more interesting to me.</p>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 alts">
 				<h3>EMWorks</h3>
 				<p>EMWorks has the benefit of being a Solidworks addon, and thus benefiting from the many powerful capabilities and general user-friendliness of Solidworks. Ultimately, it proved too difficult to get a license, compared to COMSOL.</p>
 			</div>
@@ -195,7 +203,7 @@ iframe {
 <!-- =========================
     Conclusion Section  
 ============================== -->
-<section id="introduction">
+<section id="conclusion">
 	<div class="container">
 		<div class="row">
 			<h1>Conclusion</h1>	
